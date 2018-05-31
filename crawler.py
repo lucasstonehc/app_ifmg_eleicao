@@ -3,44 +3,45 @@ import json
 import os
 from file_generator import FileGenerator
 #cada 2 horas tenho que renovar o token
-access_token = "EAACEdEose0cBAGDEyzdKZCLwEHymOXsxccuRwNhUeoT16YEEXnDvc5iBhksTroZA5CZBLLjqaifmva7F4p3vZCfvoHyLSzksPnjS70uN9pG2LfeeMsiSzmULrNsDNpLmWuCwp60n17V0GjQCqtVAM7yG2GZAPKVAL58SuZAL5sqLq80dePZCIfOb8n2BSeITzcZD"
-base_url ="https://graph.facebook.com/v3.0"
+
+class Crawler(object):
 
 
-#lista de sqls
-sql_likes = base_url+"/me/likes?&access_token="+access_token
+	def __init__(self): #construtor
+		self.access_token = "EAACEdEose0cBAGDEyzdKZCLwEHymOXsxccuRwNhUeoT16YEEXnDvc5iBhksTroZA5CZBLLjqaifmva7F4p3vZCfvoHyLSzksPnjS70uN9pG2LfeeMsiSzmULrNsDNpLmWuCwp60n17V0GjQCqtVAM7yG2GZAPKVAL58SuZAL5sqLq80dePZCIfOb8n2BSeITzcZD"
+		self.base_url ="https://graph.facebook.com/v3.0"
+		self.sql_lists = set()
 
-sql_post = base_url+"/me/posts?limit=100&fields=message,id&access_token="+access_token
+	def sqllinecommand(self):
+		#lista de comandos get api facebook
+		sql_likes = self.base_url+"/me/likes?&access_token="+self.access_token
+		sql_post = self.base_url+"/me/posts?limit=100&fields=message,id&access_token="+self.access_token
 
+		self.sql_lists.add(sql_likes)
+		self.sql_lists.add(sql_posts)
 
-#aqui, irei criar uma classe com métodos para cada sql 
-def likes():
-	res = requests.get(sql_likes)
+	def likes(self):
+		response = requests.get(self.sql_lists[0])
 
-	if res.status_code == 200:
-		data = res.json()
+		if response.status_code == 200:
+			data = response.json()
 
-	page_liked_by_me = set()
-	for page in data["data"]:
-		page_liked_by_me.add(page["name"])
-		
+		page_liked_by_me = set()
+		for page in data["data"]:
+			page_liked_by_me.add(page["name"])
+	
 
+	def posts(self):	
 
-posts = requests.get(sql_post)
+		response = requests.get(self.sql_lists[1])
 
-if posts.status_code == 200:
-	data = posts.json()
+		if response.status_code == 200:
+			data = response.json()
 
-file = FileGenerator()
-
-for post in data["data"]:
-
-	message = ""
-	print(post["id"])
-	if "message" in post:
-		message = post["message"]
-
-	file.write_file(post["id"]+message)
-
+		for post in data["data"]:
+			message = ""
+			print(post["id"])
+			if "message" in post:
+				message = post["message"]
 
 

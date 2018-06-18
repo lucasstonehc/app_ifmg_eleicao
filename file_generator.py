@@ -1,6 +1,7 @@
 #gerador de arquivos
 import os
 import datetime
+import json
 
 
 class FileGenerator(object):
@@ -18,6 +19,11 @@ class FileGenerator(object):
 	def write_file(self, text):
 		
 		if  self.create_date_name != "":
-			day_file = open(self.path+"\\"+self.create_date_name,"r+")	
-			day_file.write(text)	
+			day_file = open(self.path+"\\"+self.create_date_name,"r+") 
+			
+			day_file.write(json.dumps(text))	
+
+
+
+
 

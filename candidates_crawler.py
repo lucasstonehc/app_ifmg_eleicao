@@ -9,9 +9,60 @@
 #PEGAR TUDO DE UMA VEZ
 	#GET graph.facebook.com
 	#/photos?ids={user-id-a},{user-id-b}
+'''
+	CRIAR um arquivo para candidato.
+'''
 
+'''Página oficial ID: 
+	Luiz Inácio Lula:
+	LINKS: //www.facebook.com/2018lula/  --- ID = 303993023389132
+		  //www.facebook.com/Lula-Oficial-114272049388983/ --- ID = 114272049388983
+          //www.facebook.com/PresidenteLula13/ ---  ID = 1273688872753126
+          //www.facebook.com/Lula/  --- ID = 267949976607343
 
-#Página oficial ID: Luiz Inácio Lula-> 114272049388983
+	Ciro Gomes:
+	LINKS:
+		//www.facebook.com/cirogomesoficial/  --- ID = 1216504185136925
+		//www.facebook.com/TimeCiroGomes/   --- ID = 1453548241604118
+		//www.facebook.com/oCiroGomes/     --- ID = 1624304177798362
+		//www.facebook.com/CIROGBRASILEIRO/ --- ID = 1642911379256060
+
+	Aécio Neves:
+	LINKS:
+		//www.facebook.com/AecioNevesOficial/ --- ID = 411754008869486
+		//www.facebook.com/aecionevesdacunha/  --- ID = 96990998628
+		//www.facebook.com/Aécio-Neves-45-Presidente-2018-886650364687404/  --- ID = 886650364687404
+
+	Marina Silva:
+	LINKS:
+		//www.facebook.com/marinasilva.oficial/  --- ID = 126351747376464
+		//www.facebook.com/nossamarina/  --- ID = 196282877151977
+		//www.facebook.com/Marina-Silva-Presidente-2018-652587981427008/ --- ID = 652587981427008
+
+	Álvaro Dias:
+	LINKS:
+		//www.facebook.com/ad.alvarodias/?ref=br_rs --- ID = 199599520097304
+		//www.facebook.com/Presidente.Alvaro.Dias/ --- ID = 1801560020115618
+		//www.facebook.com/eleitoresdealvarodias/  --- ID = 584005138358006
+
+	Cristovam:
+	LINKS:
+
+	José Serra:
+	LINKS:
+
+	Geraldo Alckmin:
+	LINKS:
+
+	Jair Bolsonaro:
+	LINKS:
+		//www.facebook.com/jairmessias.bolsonaro/  --- ID = 211857482296579
+		//www.facebook.com/bolsonaropresidente2018sim/ --- ID = 471964666469200
+		//www.facebook.com/movimentobrasiladireita/  --- ID = 402760906551545
+
+	Ronaldo Caíado:
+	LINKS:
+'''
 
 import requests
 import json

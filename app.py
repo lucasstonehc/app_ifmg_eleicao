@@ -138,7 +138,7 @@ def main():
 	driver = webdriver.Chrome(executable_path=r'C:\apps\chromedriver.exe')
 
 	usr = "lucas-stone@live.com"
-	pwd = "rocknegro"
+	pwd = ""
 	# or you can use Chrome(executable_path="/usr/bin/chromedriver")
 	driver.get("http://www.facebook.org")
 	assert "Facebook" in driver.title

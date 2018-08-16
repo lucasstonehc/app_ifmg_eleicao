@@ -1,0 +1,56 @@
+Data_de_Coleta: 16/8/2018 17:20
+Data_do_Poste: Today
+Texto: Text
+Comentario: 7 comentários
+Likes: 94
+Compartilhamentos: 17 compartilhamentos
+Tags: tag
+Visualizações: None
+Data_de_Coleta: 16/8/2018 11:50
+Data_do_Poste: Today
+Texto: Text
+Comentario: 38 comentários
+Likes: 188
+Compartilhamentos: 38 compartilhamentos
+Tags: tag
+Visualizações: None
+Data_de_Coleta: 16/8/2018 03:15
+Data_do_Poste: Today
+Texto: Text
+Comentario: 233 comentários
+Likes: 1,6 mil
+Compartilhamentos: 74 compartilhamentos
+Tags: tag
+Visualizações: None
+Data_de_Coleta: 16/8/2018 03:11
+Data_do_Poste: Today
+Texto: Text
+Comentario: 3 comentários
+Likes: 84
+Compartilhamentos: 6 compartilhamentos
+Tags: tag
+Visualizações: None
+Data_de_Coleta: 16/8/2018 01:16
+Data_do_Poste: Today
+Texto: Text
+Comentario: 4 comentários
+Likes: 78
+Compartilhamentos: 17 compartilhamentos
+Tags: tag
+Visualizações: <span aria-live="polite" class="_ipm _2x0m">942 visualizações</span>
+Data_de_Coleta: 15/8/2018 18:29
+Data_do_Poste: Today
+Texto: Text
+Comentario: 35 comentários
+Likes: 101
+Compartilhamentos: 25 compartilhamentos
+Tags: tag
+Visualizações: <span aria-live="polite" class="_ipm _2x0m">1,7 mil visualizações</span>
+Data_de_Coleta: 15/8/2018 16:38
+Data_do_Poste: Today
+Texto: Text
+Comentario: 41 comentários
+Likes: 92
+Compartilhamentos: 9 compartilhamentos
+Tags: tag
+Visualizações: <span aria-live="polite" class="_ipm _2x0m">1,5 mil visualizações</span>
